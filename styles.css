@@ -1,0 +1,113 @@
+.header{
+  margin-top: 30px;
+  display: flex 1;
+  flex-direction: row;
+  background-color: blue;
+  gap: 250px;
+  margin-bottom: 90px;
+  justify-content: center;
+  
+}
+
+.right-section{
+  margin-left: 80px;
+  color: white;
+  font-size: 30px;
+}
+.left-section{
+  color:white;
+  font-size: 30px;
+}
+.Intro{
+  text-align: center;
+  color: aliceblue;
+}
+.hero button{
+  background-color: rgb(15, 15, 15);
+  font-family: Verdana;
+  font-weight: bold;
+  color:white;
+
+  border-color: rgb(185, 174, 174);
+  width: 150px;
+  height: 30px;
+  border-width: 2px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  
+}
+button:hover{
+  background-color: rgb(254, 255, 255);
+  color:black
+}
+body {
+  background-color: black;
+  color: var(--px-text);
+  font-family: Jost,sans-serif;
+  --bs-body-font-weight: 400;
+  --bs-body-font-size: 1rem;
+  --bs-body-line-height: 1.6;
+  overflow-x: hidden;
+}
+.thumbnail{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+  padding: 4rem;
+}
+.hero h1{
+  font-size: 100px;
+
+}
+.hero span{
+  color: orange;
+}
+.hero p{
+  line-height: 1.5rem;
+}
+.service{
+  background-color: white;
+  padding: 4rem;
+}
+.service h1{
+  color: orange;
+  font-size: 40px;
+}
+.service, .service-cards{
+  display: flex;
+  flex-direction: row;
+}
+h3{
+  color: white;
+  font-size: larger;
+}
+p{
+  color: white;
+  display: inline-block;
+  font: 1em sans-serif;
+  font-family: Verdana;
+  font-size: larger;
+ 
+}
+.end{
+  color:white;
+  text-size-adjust: 20px;
+}
+ul{
+  color: orange;
+}
+.three{
+  flex: 1;
+ 
+}
+.image{
+  display:inline-block;
+}
