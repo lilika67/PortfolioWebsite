@@ -1,92 +1,241 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fce33c62a7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="stickyNav" class="sticky" >
+                <img src="images/logo.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portifolio">Portifolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Software developer </h1>
+                <p>Hi, I'm <spa>Liliane KAYITESI</span>
+                     </p>
+                    <button class="btn btn2">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+<!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\Liliane\Pictures\pr photo.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I am a software Engineer with a mission to use technology to solve every real life problem.
+                    </p>
+
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing web/app interfaces</li>
+                      
+                            <li><span>WEB DEVELOPMENT</span><br>Building websites</li>
+                            <li><span>APP Design</span><br>Building apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li><span>UI/UX DESIGN</span><br>UI/UX Wastezon</li>
+                          
+                            <li><span>WEB DEVELOPMENT</span><br>Web app Developmen </li>
+                            <li><span>APP DEVELOPMENT</span><br>Building Android Apps for KALI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>Bachelor in Software Engineering at African Leadership University(ALU)</li>
+                            <li><span>2018 - 2021</span><br>Advanced Level at Groupe Scolaire Officiel De Butare</li>
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">OUR SERVICES</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX DESIGN</h2>
+                    <p>
+                     We focuses on the visual elements of a digital product, including layout, colors, typography, and imagery   
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>WEB DEVELOPMENT</h2>
+                    <p>
+                      We creatwebsites and web applications for the internet.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        We design different modernized app for your companies and businesses.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- portifolio -->
+<div id="portifolio">
+    <div class="container">
+        <h1 class="sub-title">MY PORTIFOLIO</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="file:///C:/Users/Liliane/Downloads/to%20do%20list.webp" alt="">
+                <div class="layer">
+                    <h3>To do Llist App</h3>
+                   
+                    <a href="file:///C:/Users/Liliane/Documents/Projects/ToDo-list/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\Liliane\Downloads\UI.png" alt="">
+                <div class="layer">
+                    <h3>Chat App</h3>
+                    
+                    <a href="file:///C:/Users/Liliane/Documents/Projects/ChatApp/chat.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ui and ux image.jpg" alt="">
+                <div class="layer">
+                  
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact me section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kl@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0791459051</p>
+                
+                <a href="file:///C:/Users/Liliane/Downloads/liliane%20cv.pdf" download  class="btn btn2" target="_blank" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendMail(); return false;">
+                    <label for="Name">Name:</label>
+                    <input id="Name" type="text" name="Name" placeholder=" Enter Your Name" required>
+                    
+                    <label for="Email">Email:</label>
+                    <input id="Email" type="email" name="Email" placeholder="Enter Your Email" required>
+
+                    <label for="Phone">Replied To:</label>
+                    <input id="replyto" type="phone" name="phone" placeholder="Replied To" required>
+                    
+                    <label for="Message">Message:</label>
+                    <textarea id="Message" name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <div id="confirmation" style="display: none;">
+                  Thank you for contacting us! We will get back to you shortly.
+              </div>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
     
-  </head>
-  <body>
-    <header class="header">
-    <div class="left-section">Lilian.</div>
-    <div class="middle-section"></div>
-    <div class="right-section"></div>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a class="btn" href="">Contacts</a></li> 
-      
-    </ul>
-  </header>
-  <main>
-    <div class="hero">
-      <div class="images">
-        <img src="/hero.svg" alt=""/>
-      </div>
-      <div class="images">
-        <h1 class="Intro">I'm Liliane</h1>
-    <img class="thumbnail" src="C:\Users\Liliane\Pictures\pr photo.png">
+</div>
 
-        <h1>
-          I am a
-          <br />
-         <span> Developer</span> 
-        </h1>
-        <p>We offer different types of services including graphic design and also web development
-          service
-        </p>
-        <br>
-        <button>Get in touch</button>
-      </br>
-      </div>
-    </div>
-  </main>
-  
-   <div class="image">
-    <h1 style="color:orange;
-    font-size: 50px;" >Our services</h1>
-    <img src="C:\Users\Liliane\Pictures\IMG_0700.JPG">
-    <p >I have attended many leadership masterclasses and learned many good leadership
-      skills that will help me become a good leader who will transform Africa. Being a good
-      leader also requires continuous learning and improvement, which is why I always try
-      to learn from my role models in leadership and know where I can improve. I am also
-      studying for my bachelor's degree in software engineering, which will help me to gain
-      more technological knowledge to use in other to bring more transformation in the
-      agriculture sector in order to improve myself to be able to actualize my leadership
-      goals and become a better transformation leader.</p>
-    <div class="service-cards">
-      <div class="image">
-        <h3  style="color:orange;
-        font-size: 50px;">Web development</h3>
-        <img class="three" src="C:\Users\Liliane\Pictures\three.png" alt="" />
-        <p>
-          In life, we all strive to become the best version of ourselves – our ideal selves. When
-          it comes to transformational leadership, for me, this ideal self embodies a leader who
-          brings positive influence wherever they go and aspires to make a meaningful impact
-          on the world. My vision is to see a world where all people are equal to the law, this
-          encourages me the most to be a transformational leader who will bring the change
-          that I want to see in the world. With a firm understanding of who I am, I seek to lead
-          with purpose, compassion, and the desire to empower others.<br> Join me on this
-          journey of transformational leadership and mostly values-driven leadership.
-          I see myself as a proactive and compassionate leader who values self-respect and
-          treats others with equal respect. My self-esteem is nur</br>
-        </p>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
 
-        
-      </div>
-    </div>
-   </div>
-  </header>
-  <footer>
-    <div>
-      <h3 class="end" style="color:orange;
-      font-size: 50px;">Visit us</h3>
-      <ul>
-        
-        <li><a target="_blank" href="file:///C:/Users/Liliane/Downloads/inspirational-career-quotes-about-success4.webp">Facebook</a></li>
-        <li><a target="_blank" href="file:///C:/Users/Liliane/Downloads/inspirational-career-quotes-about-success4.webp">Youtube</a></li>
-        <li><a target="_blank" href="file:///C:/Users/Liliane/Downloads/agritech.webp">Twitter</a></li> 
-      </ul>
-    </div>
-  </footer>
-  </body>
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+
+    <!-- form -->
+
+    <script>
+      // JavaScript code to handle form submission
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Get form input values
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+
+          // Perform client-side validation (you can add more validation)
+          if (!name || !email || !message) {
+              alert("Please fill in all fields.");
+              return;
+          }
+
+          // Display confirmation message and clear form
+          document.getElementById("confirmation").style.display = "block";
+          document.getElementById("contactForm").reset();
+      });
+  </script>
+     
+    
+
+
+</body>
 </html>
+          
+          
+  
