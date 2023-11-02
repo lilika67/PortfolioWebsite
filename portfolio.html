@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portifolio</title>
+    <title>Personal</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/fce33c62a7.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
@@ -142,7 +142,7 @@
     </div>
 </div>
 
-<!-- contact me section -->
+<!-- contact me part-->
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -180,55 +180,10 @@
 </div>
 
     <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+        
     </script>
 
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = '0';
-        }
-
-        function closemenu(){
-            sidemenu.style.right = '-200px';
-        }
-    </script>
-
-    <!-- form -->
-
-    <script>
-      // JavaScript code to handle form submission
-      document.getElementById("contactForm").addEventListener("submit", function(event) {
-          event.preventDefault(); // Prevent the form from submitting
-
-          // Get form input values
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var message = document.getElementById("message").value;
-
-          // Perform client-side validation (you can add more validation)
-          if (!name || !email || !message) {
-              alert("Please fill in all fields.");
-              return;
-          }
-
-          // Display confirmation message and clear form
-          document.getElementById("confirmation").style.display = "block";
-          document.getElementById("contactForm").reset();
-      });
+   
   </script>
      
     
